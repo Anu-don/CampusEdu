@@ -104,7 +104,6 @@ When chatting in the CLI, you can use these special commands to control the sess
 ├── .env                     # API key configurations
 ├── requirement.txt          # Python dependencies
 ├── CampusEdu.bat            # One-click Windows startup script
-├── CampasEdu.bat            # Alternative startup script name
 ├── check_requirements.py    # Requirement checking utility
 ├── main.py                  # CLI Orchestration pipeline (Main entrypoint)
 ├── web.py                   # Web server entrypoint
