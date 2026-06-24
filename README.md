@@ -20,6 +20,12 @@ CampusEdu is a highly interactive, intelligent chatbot framework that seamlessly
 
 ## Contributers
 
+| Name | Contribution |
+|------|-------------|
+| Anurag | Frontend Developement and API integration, Deployment |
+| Priksha Nehra | Backend developement, Research, Data Collection |
+| Gurjeet Singh | Testing, Docker Configuration and Containerization |
+
 ---
 
 ## 🛠️ Prerequisites
