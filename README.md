@@ -18,6 +18,10 @@ CampusEdu is a highly interactive, intelligent chatbot framework that seamlessly
 
 ---
 
+## Contributers
+
+---
+
 ## 🛠️ Prerequisites
 
 1. **Python**: Python 3.8 or higher installed and added to your system's `PATH`.
