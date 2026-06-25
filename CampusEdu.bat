@@ -26,8 +26,8 @@ python check_requirements.py
 set CHECK_ERR=%errorlevel%
 
 if %CHECK_ERR% neq 0 (
-    echo [INFO] Installing/updating requirements from requirement.txt...
-    python -m pip install -r requirement.txt
+    echo [INFO] Installing/updating requirements from requirements.txt...
+    python -m pip install -r requirements.txt
 ) else (
     echo [INFO] All requirements verified.
 )

@@ -2,10 +2,10 @@ from pathlib import Path
 import sys
 
 BASE_DIR = Path(__file__).resolve().parent
-requirements_path = BASE_DIR / "requirement.txt"
+requirements_path = BASE_DIR / "requirements.txt"
 
 if not requirements_path.exists():
-    print("Error: requirement.txt not found.")
+    print("Error: requirements.txt not found.")
     sys.exit(1)
 
 requirements = []
@@ -16,7 +16,7 @@ for line in requirements_path.read_text(encoding="utf-8").splitlines():
     requirements.append(line)
 
 if not requirements:
-    print("No required packages listed in requirement.txt.")
+    print("No required packages listed in requirements.txt.")
     sys.exit(0)
 
 try:

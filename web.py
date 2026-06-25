@@ -75,7 +75,7 @@ class ChatbotWebHandler(SimpleHTTPRequestHandler):
         self.wfile.write(response)
 
 
-def run(host: str = "0.0.0.0", port: int = 8000):
+def run(host: str = "127.0.0.1", port: int = 8000):
     init_database()
     server = ThreadingHTTPServer((host, port), ChatbotWebHandler)
     print(f"CampusEdu web chatbot running at http://{host}:{port}")
