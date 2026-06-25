@@ -19,11 +19,11 @@ SHORT_FORMS = load_short_forms(os.path.join(DATA_DIR, "short_qa.csv"))
 def build_response(user_input: str) -> tuple[str, str]:
     db_answer = query_local_db(user_input)
     if db_answer:
-        return db_answer, "Database"
+        return db_answer, "Bot"
 
     dataset_answer = get_chatbot_response(user_input, DATASET, SHORT_FORMS)
     if dataset_answer:
-        return dataset_answer, "Dataset"
+        return dataset_answer, "Bot :)"
 
     if not is_online():
         return "Network connection is unavailable. Gemini cannot be reached right now.", "System"
