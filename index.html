@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusEdu Chatbot</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="CampusEduLogo.png" alt="CampusEdu Logo" style="height:48px;" />
+    <a class="brand" href="#home">CampusEdu</a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#chatbot">Chatbot</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI assisted campus support</p>
+        <h1>CampusEdu Smart Chatbot</h1>
+        <p class="lead">
+          A web-based college assistant that answers common questions from a local knowledge base first, then uses OpenAI when the answer needs broader reasoning.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-action" id="tryNowButton" type="button">Try Now</button>
+          <a class="secondary-action" href="#about">About Project</a>
+        </div>
+      </div>
+
+      <div class="project-summary" aria-label="Project summary">
+        <div>
+          <span>01</span>
+          <p>Local CSV and database responses for fast known answers.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <p>OpenAI fallback for questions outside the saved dataset.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Simple browser interface connected to the Python backend.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Built for quick student support</h2>
+      </div>
+      <div>
+        <p>
+        CampusEdu combines fixed campus knowledge with online AI answers. The backend checks the local database and CSV dataset before contacting OpenAI, which keeps common replies fast while still allowing flexible answers when the question is new.
+        </p>
+        <button class="primary-action about-action" id="aboutTryButton" type="button">Try Now</button>
+      </div>
+    </section>
+
+    <section class="chat-shell" id="chatbot" aria-label="Try CampusEdu chatbot">
+      <div class="section-heading">
+        <p class="eyebrow">Try Now</p>
+        <h2>Ask the chatbot</h2>
+      </div>
+
+      <section class="chat-panel" aria-label="CampusEdu chatbot">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">CampusEdu</p>
+            <h1>Smart Chatbot</h1>
+          </div>
+          <span class="status" id="status">Ready</span>
+        </header>
+
+        <div class="messages" id="messages" aria-live="polite">
+          <article class="message bot">
+            <div class="bubble">
+              <span class="source">System</span>
+              <p>Hi, ask me anything. I will check the local dataset first, then OpenAI if needed.</p>
+            </div>
+          </article>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <input id="messageInput" type="text" autocomplete="off" placeholder="Type your message..." aria-label="Message">
+          <button type="submit" aria-label="Send message">Send</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
